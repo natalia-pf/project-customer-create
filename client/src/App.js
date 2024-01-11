@@ -2,8 +2,8 @@ import ListCostumers from './pages/ListCustomers';
 
 function App() {
   return (
-    <div>
-      <ListCostumers />
+    <div className="App">
+    <ListCostumers />
     </div>
   );
 }

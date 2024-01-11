@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Icon from './Icon';
 
 const TextInput = ({
@@ -10,11 +10,6 @@ const TextInput = ({
     icon = "edit",
     hideLabel = false,
 }) => {
-    const [value, setValue] = useState('')
-
-
-    useEffect(() => { onChange(value) }, [value]);
-
     return <div className='text-input flex direction-column'>
         {!hideLabel && <span>{label}</span>}
         <div
@@ -25,7 +20,7 @@ const TextInput = ({
             <input
                 type={type}
                 placeholder={placeHolder}
-                onChange={(res) => setValue(res.target.value)}
+                onChange={(res) => onChange(res)}
                 className='input-default'
             />
         </div>

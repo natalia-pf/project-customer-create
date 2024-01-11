@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 $main-purple: #7F23F7;
 
 * {
@@ -17,6 +18,10 @@ $main-purple: #7F23F7;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .flex {
@@ -118,6 +123,9 @@ $main-purple: #7F23F7;
     border: 1px solid;
     border-color: #E6E6E6;
     border-radius: 5px;
+    display: block;
+    max-width: 90%;
+    overflow: auto;
 }
 
 .table-th {
@@ -128,4 +136,26 @@ $main-purple: #7F23F7;
 
 .table-column-row {
     background-color: #FFFFFF;
+}
+
+.modal-background{
+  background-color: #191919a3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-container{
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+
+.modal-header{
+  font-weight: 500 ;
+}
+
+.error {
+  text-align: center;
+  margin: 40px 50px 50px 50px;
+  max-width: 300px;
 }

@@ -4,10 +4,10 @@ const Table = ({ columns = [], list = [] }) => {
     return (
         <table className="table">
             <tr className='table-column-row'>
-                {columns.map(column =>
+                {columns.map((column, index) =>
                     <th className='table-th'>
                         <div style={{ gap: 10, height: 40 }} className='flex direction-row align-center'>
-                            <div className='divisor-y' />
+                            {index !== 0 && <div className='divisor-y' />}
                             {column.Label}
                         </div>
                     </th>
@@ -16,7 +16,11 @@ const Table = ({ columns = [], list = [] }) => {
 
             {list.map(item =>
                 <tr>
-                    {columns.map(column => <td>{item[column.Property]}</td>)}
+                    {columns.map(column =>
+                        <td style={column.CellStyle}>{
+                            item[column.Property] || column.ExecFunction(item)
+                        }</td>)
+                    }
                 </tr>
             )}
         </table>
