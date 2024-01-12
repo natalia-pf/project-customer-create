@@ -118,14 +118,18 @@ $main-purple: #7F23F7;
     width: 90%;
 }
 
-.table {
+.table-container {
     width: 90%;
-    border: 1px solid;
-    border-color: #E6E6E6;
-    border-radius: 5px;
     display: block;
     max-width: 90%;
     overflow: auto;
+}
+
+.table {
+    width: 100%;
+    border: 1px solid;
+    border-color: #E6E6E6;
+    border-radius: 5px;
 }
 
 .table-th {

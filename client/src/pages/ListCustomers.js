@@ -28,6 +28,7 @@ const ListCostumers = ({ }) => {
     const columns = [
         {
             Label: "Nome do Cliente",
+            CellStyle: { minWidth: "150px" },
             Property: "Name"
         },
         {
