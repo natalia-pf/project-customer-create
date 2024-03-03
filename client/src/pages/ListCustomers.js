@@ -70,7 +70,7 @@ const ListCostumers = ({ }) => {
             />}
 
             <header className='header flex align-center direction-row'>
-                <span style={{ marginLeft: 20 }}>Goalfy</span>
+                <span style={{ marginLeft: 20 }}>Início</span>
                 <div className='divisor-y' />
                 <Icon icon="open_in_new" color="#7F23F7" />
                 <span style={{ fontWeight: 500 }}>Registro de Clientes</span>
